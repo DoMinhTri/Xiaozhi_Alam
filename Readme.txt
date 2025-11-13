@@ -1,6 +1,6 @@
 1/ copy thư mục main vào project
 -------------------------------------------------------------
----- main/application.cc ----
+---- main\application.cc ----
 -------------------------------------------------------------
 2/ Thêm include vào
 	- Code:
@@ -19,7 +19,7 @@
 	// Kiểm tra alarm mỗi giây
 	AlarmManager::getInstance().checkAlarms();  
 -------------------------------------------------------------
----- mcp_server.cc ----
+---- main\mcp_server.cc ----
 -------------------------------------------------------------
 5/ Thêm include vào
 	- Code:
@@ -32,7 +32,7 @@
 	// Thêm vào MCP
 	AlarmManager::getInstance().mcpVoice();
 -------------------------------------------------------------
-----  `main/CMakeLists.txt`  ----
+----  main\CMakeLists.txt  ----
 -------------------------------------------------------------
 7/ Trong phần set(SOURCES kế  "main.cc"
 	- Code:
